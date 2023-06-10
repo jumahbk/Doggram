@@ -26,7 +26,7 @@ struct ContentView: View {
                 Image(systemName: "book.fill")
                 Text("tab 1")
             }
-        }.accentColor(.green)
+        }.accentColor(Color.MyTheme.yellowColor)
     }
 }
 
