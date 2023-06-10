@@ -12,6 +12,7 @@
 		24F053382A3503010040339E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24F053372A3503010040339E /* Assets.xcassets */; };
 		24F0533C2A3503010040339E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24F0533B2A3503010040339E /* Preview Assets.xcassets */; };
 		24F053432A3506DA0040339E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F053422A3506DA0040339E /* LaunchScreen.storyboard */; };
+		24F053492A3512BD0040339E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F053482A3512BD0040339E /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		24F053392A3503010040339E /* Doggram.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Doggram.entitlements; sourceTree = "<group>"; };
 		24F0533B2A3503010040339E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		24F053422A3506DA0040339E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24F053482A3512BD0040339E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +56,8 @@
 		24F053322A3503000040339E /* Doggram */ = {
 			isa = PBXGroup;
 			children = (
-				24F053332A3503000040339E /* DoggramApp.swift */,
-				24F053352A3503000040339E /* ContentView.swift */,
+				24F053472A3512A40040339E /* helpers */,
+				24F053442A3510EA0040339E /* Views */,
 				24F053372A3503010040339E /* Assets.xcassets */,
 				24F053392A3503010040339E /* Doggram.entitlements */,
 				24F0533A2A3503010040339E /* Preview Content */,
@@ -70,6 +72,39 @@
 				24F0533B2A3503010040339E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		24F053442A3510EA0040339E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				24F053332A3503000040339E /* DoggramApp.swift */,
+				24F053352A3503000040339E /* ContentView.swift */,
+				24F053462A3510F90040339E /* Subviews */,
+				24F053452A3510F10040339E /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		24F053452A3510F10040339E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		24F053462A3510F90040339E /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		24F053472A3512A40040339E /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				24F053482A3512BD0040339E /* Extensions.swift */,
+			);
+			path = helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24F053362A3503000040339E /* ContentView.swift in Sources */,
+				24F053492A3512BD0040339E /* Extensions.swift in Sources */,
 				24F053342A3503000040339E /* DoggramApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
