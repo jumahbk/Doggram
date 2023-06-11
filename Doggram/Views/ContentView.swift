@@ -12,7 +12,7 @@ struct ContentView: View {
         TabView {
             Text("Screen 1").tabItem {
                 Image(systemName: "book.fill")
-                Text("tab 1")
+                Text("Feed")
             }
             Text("Screen 2").tabItem {
                 Image(systemName: "book.fill")
