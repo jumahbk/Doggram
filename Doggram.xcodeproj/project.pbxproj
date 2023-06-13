@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		20E0EBF72A363616005AC571 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0EBF62A363616005AC571 /* FeedView.swift */; };
 		20E0EBF92A363729005AC571 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0EBF82A363729005AC571 /* PostView.swift */; };
+		20E0EBFC2A38F331005AC571 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0EBFB2A38F331005AC571 /* PostModel.swift */; };
+		20E0EBFE2A38FA10005AC571 /* PostArrayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0EBFD2A38FA10005AC571 /* PostArrayObject.swift */; };
 		24F053342A3503000040339E /* DoggramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F053332A3503000040339E /* DoggramApp.swift */; };
 		24F053362A3503000040339E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F053352A3503000040339E /* ContentView.swift */; };
 		24F053382A3503010040339E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24F053372A3503010040339E /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		20E0EBF62A363616005AC571 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		20E0EBF82A363729005AC571 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostView.swift; path = Doggram/Views/PostView.swift; sourceTree = SOURCE_ROOT; };
+		20E0EBFB2A38F331005AC571 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		20E0EBFD2A38FA10005AC571 /* PostArrayObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostArrayObject.swift; sourceTree = "<group>"; };
 		24F053302A3503000040339E /* Doggram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Doggram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24F053332A3503000040339E /* DoggramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoggramApp.swift; sourceTree = "<group>"; };
 		24F053352A3503000040339E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20E0EBFA2A38F2A0005AC571 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				20E0EBFB2A38F331005AC571 /* PostModel.swift */,
+				20E0EBFD2A38FA10005AC571 /* PostArrayObject.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		24F053272A3503000040339E = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +73,7 @@
 		24F053322A3503000040339E /* Doggram */ = {
 			isa = PBXGroup;
 			children = (
+				20E0EBFA2A38F2A0005AC571 /* Models */,
 				24F053472A3512A40040339E /* helpers */,
 				24F053442A3510EA0040339E /* Views */,
 				24F053372A3503010040339E /* Assets.xcassets */,
@@ -185,8 +199,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				20E0EBF72A363616005AC571 /* FeedView.swift in Sources */,
+				20E0EBFC2A38F331005AC571 /* PostModel.swift in Sources */,
 				24F053362A3503000040339E /* ContentView.swift in Sources */,
 				24F053492A3512BD0040339E /* Extensions.swift in Sources */,
+				20E0EBFE2A38FA10005AC571 /* PostArrayObject.swift in Sources */,
 				20E0EBF92A363729005AC571 /* PostView.swift in Sources */,
 				24F053342A3503000040339E /* DoggramApp.swift in Sources */,
 			);
