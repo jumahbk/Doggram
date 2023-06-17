@@ -17,6 +17,7 @@
 		24F0533C2A3503010040339E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24F0533B2A3503010040339E /* Preview Assets.xcassets */; };
 		24F053432A3506DA0040339E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F053422A3506DA0040339E /* LaunchScreen.storyboard */; };
 		24F053492A3512BD0040339E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F053482A3512BD0040339E /* Extensions.swift */; };
+		24F0534B2A3E48100040339E /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F0534A2A3E48100040339E /* CommentsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		24F0533B2A3503010040339E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		24F053422A3506DA0040339E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24F053482A3512BD0040339E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		24F0534A2A3E48100040339E /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		24F053452A3510F10040339E /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				24F0534A2A3E48100040339E /* CommentsView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				24F053492A3512BD0040339E /* Extensions.swift in Sources */,
 				20E0EBFE2A38FA10005AC571 /* PostArrayObject.swift in Sources */,
 				20E0EBF92A363729005AC571 /* PostView.swift in Sources */,
+				24F0534B2A3E48100040339E /* CommentsView.swift in Sources */,
 				24F053342A3503000040339E /* DoggramApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

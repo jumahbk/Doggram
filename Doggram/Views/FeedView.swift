@@ -12,10 +12,13 @@ struct FeedView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false, content: {
 //            PostView()
-            ForEach(posts.dataArray, id: \.self){
-                post in
-                PostView(post: post)
+            LazyVStack{
+                ForEach(posts.dataArray, id: \.self){
+                    post in
+                    PostView(post: post)
+                }
             }
+
 
         })
         .navigationBarTitle("Feed View")
