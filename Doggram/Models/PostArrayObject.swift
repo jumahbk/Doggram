@@ -28,4 +28,9 @@ class PostArrayObject: ObservableObject{
         self.dataArray.append(post4)
 
     }
+    
+    init(post : PostView)
+    {
+        self.dataArray.append(post)
+    }
 }

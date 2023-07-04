@@ -9,18 +9,16 @@ import SwiftUI
 
 struct CommentsView: View {
     @State var submissionText: String = ""
+    @State var commentArray = [CommentModel]()
+
     var body: some View {
         VStack{
             ScrollView{
-                Text("Place Holder")
-                Text("Place Holder")
-                Text("Place Holder")
-                Text("Place Holder")
-                Text("Place Holder")
-                Text("Place Holder")
-                Text("Place Holder")
-                Text("Place Holder")
-                Text("Place Holder")
+                LazyVStack{
+                    ForEach(commentArray, id: \.self) { comment in
+                        MessageView(comment: comment)
+                    }
+                }
 
             }
             HStack{
@@ -36,9 +34,26 @@ struct CommentsView: View {
             }.padding(.all, 6)
                 
             }
-        .navigationBarTitle("Comments").navigationBarTitleDisplayMode(.inline)
+        .navigationBarTitle("Comments").navigationBarTitleDisplayMode(.inline).onAppear {
+            getComments()
         }
+        }
+    func getComments(){
+        print("Get Comments from Database")
+       var cm = CommentModel(commentID: "d", userID: "String", content: "adfs", username: "sdf", dateCreated: Date())
+        var cm1 = CommentModel(commentID: "d", userID: "String", content: "adfs", username: "shady", dateCreated: Date())
+        var cm3 = CommentModel(commentID: "d", userID: "String", content: "adfs", username: "nourah", dateCreated: Date())
+        var cm4 = CommentModel(commentID: "d", userID: "String", content: "adfs", username: "fahd", dateCreated: Date())
+        var cm5 = CommentModel(commentID: "d", userID: "String", content: "adfs", username: "hamza", dateCreated: Date())
+        var cm6 = CommentModel(commentID: "bitch", userID: "bitch", content: "bitch", username: "bitch", dateCreated: Date())
         
+        self.commentArray.append(cm)
+        self.commentArray.append(cm3)
+        self.commentArray.append(cm4)
+        self.commentArray.append(cm5)
+        self.commentArray.append(cm6)
+
+    }
     }
 
 
